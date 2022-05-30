@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/repartition_points_chefDeGuerre"
+        android:layout_width="246dp"
+        android:layout_height="362dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/popUp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:text="Chef de Guerre "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="146dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center|top"
+            android:layout_margin="4dp"
+            android:contentDescription="le logo du chef de Guerre"
+            app:srcCompat="@drawable/logo_chefdeguerre" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/popUp_force"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/force"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_force_plus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/popUp_button_force_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_force_plus"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_force_plus"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="▶"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/popUp_dexterite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="8dp"
+                android:text="Dextérité : 2 "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_dexterite_moins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_force_moins" />
+
+            <Button
+                android:id="@+id/popUp_button_dexterite_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_dexterite_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_force_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_dexterite_plus"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="▶"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_force_plus"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/popUp_resistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginBottom="12dp"
+                android:text="Résistance  : 2"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_resistance_moins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/popUp_button_resistance_moins" />
+
+            <Button
+                android:id="@+id/popUp_button_resistance_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_resistance_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_dexterite_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_resistance_plus"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="▶"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_dexterite_plus"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/popUp_constitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="16dp"
+                android:text="Constitution : 10"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_consititution_moins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_resistance_moins" />
+
+            <Button
+                android:id="@+id/popUp_button_consititution_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_constitution_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_resistance_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_constitution_plus"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="▶"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_resistance_plus"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/popUp_initiative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="4dp"
+                android:text="Initiative : 2"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_initiative_moins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_consititution_moins" />
+
+            <Button
+                android:id="@+id/popUp_button_initiative_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_initiative_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_consititution_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_initiative_plus"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="▶"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_constitution_plus"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/popUp_IA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="16dp"
+                android:text="IA : offensive"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_initiative_moins" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="▶"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_initiative_plus"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/button17"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_initiative_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
