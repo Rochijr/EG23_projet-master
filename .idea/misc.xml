@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/UTT/ISI/ISI01/eg23/EG23_projet-master/app/src/main/res/layout/activity_deploiement_armee.xml" value="0.33" />
+        <entry key="..\:/UTT/ISI/ISI01/eg23/EG23_projet-master/app/src/main/res/layout/activity_redeploiement_armee.xml" value="0.33" />
         <entry key="..\:/UTT/ISI/ISI01/eg23/EG23_projet-master/app/src/main/res/layout/activity_repartition_points.xml" value="0.5" />
         <entry key="..\:/UTT/ISI/ISI01/eg23/EG23_projet-master/app/src/main/res/layout/activity_reserve.xml" value="0.33" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/EG23_projet-master/app/src/main/res/drawable/zone_combat.xml" value="0.279" />
@@ -17,11 +18,9 @@
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/button_arrow.xml" value="0.1" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/zone_combat.xml" value="0.1" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_choix_programme.xml" value="0.264" />
-        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_combat.xml" value="0.1" />
-        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_deploiement_armee.xml" value="0.264" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_deploiement_armee.xml" value="0.1" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_didacticiel.xml" value="0.25" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_didacticiel2.xml" value="0.2" />
-        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_fin_de_partie.xml" value="0.1" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_repartition_points.xml" value="0.264" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_reserve.xml" value="0.2" />
