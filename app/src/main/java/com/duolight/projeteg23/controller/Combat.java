@@ -2,8 +2,6 @@ package com.duolight.projeteg23.controller;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.BlendMode;
-import android.graphics.BlendModeColorFilter;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -24,9 +22,6 @@ public class Combat extends AppCompatActivity {
     private static final String SHARED_PREF_JOUEUR_1_INFO_KEY = "SHARED_PREF_JOUEUR_1_INFO_KEY"; // Key
     private static final String SHARED_PREF_JOUEUR_GAGNANT = "SHARED_PREF_JOUEUR_GAGNANT"; // nom du fichier
     private static final String SHARED_PREF_JOUEUR_GAGNANT_KEY = "SHARED_PREF_JOUEUR_GAGNANT_KEY"; // Key
-
-    private static final String SHARED_PREF_NOMBRE_DE_TOUR = "SHARED_PREF_NOMBRE_DE_TOUR"; // nom du fichier
-    private static final String SHARED_PREF_NOMBRE_DE_TOUR_KEY = "SHARED_PREF_NOMBRE_DE_TOUR_KEY"; // Key
 
     private TextView mBranche;
 
@@ -60,11 +55,6 @@ public class Combat extends AppCompatActivity {
     private ImageView zone5Soldat3Image;
     private ImageView zone5Soldat4Image;
 
-    //soldats du joueur2
-    private ImageView zone1Soldat0Joueur2Image;
-    private ImageView zone1Soldat1Joueur2Image;
-    private ImageView zone1Soldat3Joueur2Image;
-    private ImageView zone1Soldat4Joueur2Image;
 
     private TextView zone1Soldat0Text;
     private TextView zone1Soldat1Text;
@@ -97,10 +87,29 @@ public class Combat extends AppCompatActivity {
     private TextView zone5Soldat4Text;
 
     //soldats du joueur2
+    private ImageView zone1Soldat0Joueur2Image;
+    private ImageView zone1Soldat1Joueur2Image;
+    private ImageView zone1Soldat3Joueur2Image;
+    private ImageView zone1Soldat4Joueur2Image;
+
     private TextView zone1Soldat0Joueur2Text;
     private TextView zone1Soldat1Joueur2Text;
     private TextView zone1Soldat3Joueur2Text;
     private TextView zone1Soldat4Joueur2Text;
+
+    private ImageView zone2Soldat0Joueur2Image;
+    private TextView zone2Soldat0Joueur2Text;
+
+    private ImageView zone3Soldat0Joueur2Image;
+    private TextView zone3Soldat0Joueur2Text;
+    private ImageView zone3Soldat1Joueur2Image;
+    private TextView zone3Soldat1Joueur2Text;
+
+    private ImageView zone4Soldat0Joueur2Image;
+    private TextView zone4Soldat0Joueur2Text;
+
+    private ImageView zone5Soldat0Joueur2Image;
+    private TextView zone5Soldat0Joueur2Text;
 
     private LinearLayout zone1;
     private LinearLayout zone2;
@@ -117,14 +126,6 @@ public class Combat extends AppCompatActivity {
        mBranche=findViewById(R.id.joueur);
         String brancheJoueur1 = getSharedPreferences(SHARED_PREF_JOUEUR_1_INFO,MODE_PRIVATE).getString(SHARED_PREF_JOUEUR_1_INFO_KEY,null);
         mBranche.setText("Joueur 1 : " + brancheJoueur1);
-
-        //Ajoute un tour
-        /*int tour = getSharedPreferences(SHARED_PREF_NOMBRE_DE_TOUR,MODE_PRIVATE).getInt(SHARED_PREF_NOMBRE_DE_TOUR_KEY,0);
-        tour++;
-        getSharedPreferences(SHARED_PREF_NOMBRE_DE_TOUR, MODE_PRIVATE)
-                .edit()
-                .putInt("SHARED_PREF_NOMBRE_DE_TOUR_KEY", tour)
-                .apply();*/
 
         //Recuper les soldats de la page d'avant
         Intent intent = getIntent();
@@ -199,6 +200,32 @@ public class Combat extends AppCompatActivity {
         zone5Soldat3Text = findViewById(R.id.zone5_soldat3_text);
         zone5Soldat4Text = findViewById(R.id.zone5_soldat4_text);
 
+        //Lier les soldats du joueurs 2
+        zone1Soldat0Joueur2Image=findViewById(R.id.zone1_soldat0_joueur2_image);
+        zone1Soldat1Joueur2Image=findViewById(R.id.zone1_soldat1_joueur2_image);
+        zone1Soldat3Joueur2Image=findViewById(R.id.zone1_soldat3_joueur2_image);
+        zone1Soldat4Joueur2Image=findViewById(R.id.zone1_soldat4_joueur2_image);
+
+        zone1Soldat0Joueur2Text=findViewById(R.id.zone1_soldat0_joueur2_text);
+        zone1Soldat1Joueur2Text=findViewById(R.id.zone1_soldat1_joueur2_text);
+        zone1Soldat3Joueur2Text=findViewById(R.id.zone1_soldat3_joueur2_text);
+        zone1Soldat4Joueur2Text=findViewById(R.id.zone1_soldat4_joueur2_text);
+
+        zone2Soldat0Joueur2Image=findViewById(R.id.zone2_soldat0_joueur2_image);
+        zone2Soldat0Joueur2Text=findViewById(R.id.zone2_soldat0_joueur2_text);
+
+        zone3Soldat0Joueur2Image=findViewById(R.id.zone3_soldat0_joueur2_image);
+        zone3Soldat1Joueur2Image=findViewById(R.id.zone3_soldat1_joueur2_image);
+        zone3Soldat0Joueur2Text=findViewById(R.id.zone3_soldat0_joueur2_text);
+        zone3Soldat1Joueur2Text=findViewById(R.id.zone3_soldat1_joueur2_text);
+
+        zone4Soldat0Joueur2Image=findViewById(R.id.zone4_soldat0_joueur2_image);
+        zone4Soldat0Joueur2Text=findViewById(R.id.zone4_soldat0_joueur2_text);
+
+        zone5Soldat0Joueur2Image=findViewById(R.id.zone5_soldat0_joueur2_image);
+        zone5Soldat0Joueur2Text=findViewById(R.id.zone5_soldat0_joueur2_text);
+
+
         //Lier les layouts des zones
         zone1 = findViewById(R.id.combat_zone1);
         zone2 = findViewById(R.id.combat_zone2);
@@ -263,6 +290,16 @@ public class Combat extends AppCompatActivity {
         if (controleZone[1]==1){
             dZone1.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
             zone1.setBackground(dZone1);
+            //On rend les soldats du joueur 2 invisibles
+            zone1Soldat0Joueur2Image.setVisibility(View.GONE);
+            zone1Soldat1Joueur2Image.setVisibility(View.GONE);
+            zone1Soldat3Joueur2Image.setVisibility(View.GONE);
+            zone1Soldat4Joueur2Image.setVisibility(View.GONE);
+            zone1Soldat0Joueur2Text.setVisibility(View.GONE);
+            zone1Soldat1Joueur2Text.setVisibility(View.GONE);
+            zone1Soldat3Joueur2Text.setVisibility(View.GONE);
+            zone1Soldat4Joueur2Text.setVisibility(View.GONE);
+
         }
         //Affichage Zone 2
 
@@ -314,6 +351,9 @@ public class Combat extends AppCompatActivity {
         if (controleZone[2]==1){
             dZone2.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
             zone2.setBackground(dZone2);
+            //
+            zone2Soldat0Joueur2Image.setVisibility(View.GONE);
+            zone2Soldat0Joueur2Text.setVisibility(View.GONE);
         }
         //Affichage Zone3
         if(controleZone[3]!=2) {
@@ -365,6 +405,10 @@ public class Combat extends AppCompatActivity {
         if (controleZone[3]==1){
             dZone3.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
             zone3.setBackground(dZone3);
+            zone3Soldat0Joueur2Image.setVisibility(View.GONE);
+            zone3Soldat0Joueur2Text.setVisibility(View.GONE);
+            zone3Soldat1Joueur2Image.setVisibility(View.GONE);
+            zone3Soldat1Joueur2Text.setVisibility(View.GONE);
         }
 
         //Affichage Zone4
@@ -417,6 +461,8 @@ public class Combat extends AppCompatActivity {
         if (controleZone[4]==1) {
             dZone4.setColorFilter(Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
             zone4.setBackground(dZone4);
+            zone4Soldat0Joueur2Image.setVisibility(View.GONE);
+            zone4Soldat0Joueur2Text.setVisibility(View.GONE);
         }
 
         //Affichage Zone5
@@ -470,6 +516,9 @@ public class Combat extends AppCompatActivity {
             dZone5.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
             zone5.setBackground(dZone5);
             //faire disparaitre les  soldats du joueur2
+
+            zone5Soldat0Joueur2Image.setVisibility(View.GONE);
+            zone5Soldat0Joueur2Text.setVisibility(View.GONE);
         }
 
 

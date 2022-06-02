@@ -551,11 +551,13 @@
                 android:layout_alignParentRight="true">
 
                 <ImageView
+                    android:id="@+id/zone2_soldat0_joueur2_image"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone2_soldat0_joueur2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -761,11 +763,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone3_soldat0_joueur2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_alpha" />
 
                 <TextView
+                    android:id="@+id/zone3_soldat0_joueur2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -791,11 +795,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone3_soldat1_joueur2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone3_soldat1_joueur2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1001,11 +1007,13 @@
                 android:layout_alignParentRight="true">
 
                 <ImageView
+                    android:id="@+id/zone4_soldat0_joueur2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone4_soldat0_joueur2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1212,11 +1220,13 @@
                 android:layout_alignParentRight="true">
 
                 <ImageView
+                    android:id="@+id/zone5_soldat0_joueur2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_elite" />
 
                 <TextView
+                    android:id="@+id/zone5_soldat0_joueur2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
