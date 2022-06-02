@@ -572,14 +572,15 @@ public class Combat extends AppCompatActivity {
             }
         }
 
-
+        //Timer
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
 
-                //Apartir d'ici on page à la page suivant = REdeploiement ou fin de patie selon les cas
 
-                //Regarde la controle de la zone
+                //A partir d'ici on page à la page suivant = REdeploiement ou fin de patie selon les cas
+
+                //Regarde qui gagne
                 int zoneControlerParJoueur1=0;
                 int zoneConrtolerParJoueur2=0;
                 for (int i=0;i<5;i++){
@@ -589,6 +590,7 @@ public class Combat extends AppCompatActivity {
                         zoneConrtolerParJoueur2++;
                     }
                 }
+
 
                 if(zoneControlerParJoueur1==3){
                     defGagnant(1);
