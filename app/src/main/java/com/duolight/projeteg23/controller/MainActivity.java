@@ -26,6 +26,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        final TextView continuer = (TextView) findViewById(R.id.continuer);
+        continuer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // fonction déclenchée sur le clic du bouton
+                // Création d’une activité associée à l’exécution de MaGestionListe.class
+                Intent intent = new Intent(MainActivity.this, DeploiementArmee.class);
+                // Exécution de l’activité : ouverture de la fenêtre
+                startActivity(intent);
+            }
+        });
 
         final TextView quitter = (TextView) findViewById(R.id.textView4);
         quitter.setOnClickListener(new View.OnClickListener() {
