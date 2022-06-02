@@ -11,8 +11,8 @@
         android:theme="@style/Theme.ProjetEG23">
         <activity
             android:name=".controller.FinDePartie"
-            android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            android:exported="false" />
         <activity
             android:name=".controller.Combat"
             android:exported="false"
