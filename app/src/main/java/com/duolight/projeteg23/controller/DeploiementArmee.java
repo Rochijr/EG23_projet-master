@@ -157,13 +157,10 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                     v.setBackgroundResource(R.drawable.border_reserve);
                     ImageView imageView = new ImageView(this);
 
-                    //LinearLayout linearLayout = (LinearLayout) findViewById(R.id.zone1);
                     LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                             LinearLayout.LayoutParams.WRAP_CONTENT,
                             LinearLayout.LayoutParams.WRAP_CONTENT
                     );
-                    //layoutParams.addRule(RelativeLayout.BELOW, R.id.ButtonRecalculate);
-                    //layoutParams. addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
 
                     if(dragData.equals(groupe1.getTag())) {
                         imageView.setImageResource(R.drawable.logo_chefdeguerre);
@@ -181,7 +178,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                         imageView.setImageResource(R.drawable.logo_charlie);
                         addSoldat(1, 4);
                     }
-                    //((LinearLayout)v).setLayoutParams(layoutParams);
                     ((LinearLayout)v).addView(imageView, layoutParams);
                     return true;
 
@@ -458,7 +454,7 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                 compteurSoldatsZone5[groupe]++;
                 break;
             default:
-                Toast.makeText(this, "Erreur : le sodat n'a pas été ajouté au compteur", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Erreur : le soldat n'a pas été ajouté au compteur", Toast.LENGTH_LONG).show();
                 break;
         }
     }

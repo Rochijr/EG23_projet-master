@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.IntentCompat;
 
 import com.duolight.projeteg23.R;
 
@@ -30,9 +31,9 @@ public class FinDePartie extends AppCompatActivity {
         }else{
             textView.setTextColor(Color.parseColor("#F0E93A"));
         }
-        textView.setText("Victoire du joueur "+joueurGagnant);
+        textView.setText("Victoire du joueur "+ joueurGagnant);
 
-        final Button nouvellePartie = (Button ) findViewById(R.id.FinDePartie_Button_NouevellePartie);
+        final Button nouvellePartie = (Button) findViewById(R.id.FinDePartie_Button_NouvellePartie);
         // Création d’un évènement qui attend un clic sur le bouton
         nouvellePartie.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,13 +44,21 @@ public class FinDePartie extends AppCompatActivity {
             }
         });
 
-        final Button quitter = (Button ) findViewById(R.id.FinDePartie_Button_Quitter);
+        final Button quitter = (Button) findViewById(R.id.FinDePartie_Button_Quitter);
         // Création d’un évènement qui attend un clic sur le bouton
         quitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                finish();
-                System.exit(0);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | IntentCompat.FLAG_ACTIVITY_CLEAR_TASK);
+                //Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK
+                //startActivity(intent);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                //System.exit(0);
             }
         });
     }

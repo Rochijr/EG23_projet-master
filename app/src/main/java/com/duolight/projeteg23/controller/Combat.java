@@ -127,15 +127,14 @@ public class Combat extends AppCompatActivity {
         String brancheJoueur1 = getSharedPreferences(SHARED_PREF_JOUEUR_1_INFO,MODE_PRIVATE).getString(SHARED_PREF_JOUEUR_1_INFO_KEY,null);
         mBranche.setText("Joueur 1 : " + brancheJoueur1);
 
-        //Recuper les soldats de la page d'avant
+        //Récupérer les soldats de la page d'avant
         Intent intent = getIntent();
         int []soldatsZone1 = intent.getIntArrayExtra("SOLDATS_ZONE1");
         int []soldatsZone2 = intent.getIntArrayExtra("SOLDATS_ZONE2");
         int []soldatsZone3 = intent.getIntArrayExtra("SOLDATS_ZONE3");
         int []soldatsZone4 = intent.getIntArrayExtra("SOLDATS_ZONE4");
         int []soldatsZone5 = intent.getIntArrayExtra("SOLDATS_ZONE5");
-
-        int[]controleZone = intent.getIntArrayExtra("CONTROLE_ZONE");
+        int []controleZone = intent.getIntArrayExtra("CONTROLE_ZONE");
 
         // lier les images
         zone1Soldat4Image = findViewById(R.id.zone1_soldat4_image);
@@ -522,53 +521,52 @@ public class Combat extends AppCompatActivity {
         }
 
 
-
-        //regardde si la zone est est controlé et si non ou regarde qui gagne le combat
-        int sommeSodats=0;
+        //regarde si la zone est controlée et si qqun gagne le combat
+        int sommeSoldats=0;
         if(controleZone[1]==0){
-            sommeSodats=sommeSodats(soldatsZone1);
-            if (sommeSodats>8){
+            sommeSoldats=sommeSoldats(soldatsZone1);
+            if (sommeSoldats>8){
                 controleZone[1]=1;
-                Toast.makeText(this, "Zone 1 controler par le Joueur 1", Toast.LENGTH_LONG).show();
-            }else{
+                Toast.makeText(this, "Zone 1 controlée par le Joueur 1", Toast.LENGTH_LONG).show();
+            } else {
                 controleZone[1]=2;
-                Toast.makeText(this, "Zone 1 controler par le Joueur 2", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Zone 1 controlée par le Joueur 2", Toast.LENGTH_LONG).show();
             }
-        }else if (controleZone[2]==0){
-            sommeSodats=sommeSodats(soldatsZone2);
-            if (sommeSodats>=1){
+        } else if (controleZone[2]==0){
+            sommeSoldats=sommeSoldats(soldatsZone2);
+            if (sommeSoldats>=1){
                 controleZone[2]=1;
-                Toast.makeText(this, "Zone 2 controler par le Joueur 1", Toast.LENGTH_LONG).show();
-            }else{
+                Toast.makeText(this, "Zone 2 controlée par le Joueur 1", Toast.LENGTH_LONG).show();
+            } else {
                 controleZone[2]=2;
-                Toast.makeText(this, "Zone 2 controler par le Joueur 2", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Zone 2 controlée par le Joueur 2", Toast.LENGTH_LONG).show();
             }
-        }else if (controleZone[4]==0){
-            sommeSodats=sommeSodats(soldatsZone4);
-            if (sommeSodats>=1){
-                controleZone[4]=1;
-                Toast.makeText(this, "Zone 4 controler par le Joueur 1", Toast.LENGTH_LONG).show();
-            }else{
-                controleZone[4]=2;
-                Toast.makeText(this, "Zone 4 controler par le Joueur 2", Toast.LENGTH_LONG).show();
-            }
-        }else if (controleZone[5]==0){
-            sommeSodats=sommeSodats(soldatsZone5);
-            if (sommeSodats>3){
-                controleZone[5]=1;
-                Toast.makeText(this, "Zone 5 controler par le Joueur 1", Toast.LENGTH_LONG).show();
-            }else{
-                controleZone[5]=2;
-                Toast.makeText(this, "Zone 5 controler par le Joueur 2", Toast.LENGTH_LONG).show();
-            }
-        }else if (controleZone[3]==0){
-            sommeSodats=sommeSodats(soldatsZone3);
-            if (sommeSodats>=2){
+        } else if (controleZone[3]==0){
+            sommeSoldats=sommeSoldats(soldatsZone3);
+            if (sommeSoldats>=2){
                 controleZone[3]=1;
-                Toast.makeText(this, "Zone 3 controler par le Joueur 1", Toast.LENGTH_LONG).show();
-            }else{
+                Toast.makeText(this, "Zone 3 controlée par le Joueur 1", Toast.LENGTH_LONG).show();
+            } else{
                 controleZone[3]=2;
-                Toast.makeText(this, "Zone 3 controler par le Joueur 2", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Zone 3 controlée par le Joueur 2", Toast.LENGTH_LONG).show();
+            }
+        } else if (controleZone[4]==0){
+            sommeSoldats=sommeSoldats(soldatsZone4);
+            if (sommeSoldats>=1){
+                controleZone[4]=1;
+                Toast.makeText(this, "Zone 4 controlée par le Joueur 1", Toast.LENGTH_LONG).show();
+            } else{
+                controleZone[4]=2;
+                Toast.makeText(this, "Zone 4 controlée par le Joueur 2", Toast.LENGTH_LONG).show();
+            }
+        } else if (controleZone[5]==0){
+            sommeSoldats=sommeSoldats(soldatsZone5);
+            if (sommeSoldats>3){
+                controleZone[5]=1;
+                Toast.makeText(this, "Zone 5 controlée par le Joueur 1", Toast.LENGTH_LONG).show();
+            } else{
+                controleZone[5]=2;
+                Toast.makeText(this, "Zone 5 controlée par le Joueur 2", Toast.LENGTH_LONG).show();
             }
         }
 
@@ -576,27 +574,26 @@ public class Combat extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
+                //A partir d'ici on passe à la page suivante, càd Redeploiement ou fin de partie selon les cas
 
-                //Apartir d'ici on page à la page suivant = REdeploiement ou fin de patie selon les cas
-
-                //Regarde la controle de la zone
-                int zoneControlerParJoueur1=0;
-                int zoneConrtolerParJoueur2=0;
-                for (int i=0;i<5;i++){
+                //Regarde le controle des zones
+                int zoneControleeParJoueur1=0;
+                int zoneControleeParJoueur2=0;
+                for (int i=1;i<6;i++){
                     if(controleZone[i]==1){
-                        zoneControlerParJoueur1++;
+                        zoneControleeParJoueur1++;
                     }else if(controleZone[i]==2){
-                        zoneConrtolerParJoueur2++;
+                        zoneControleeParJoueur2++;
                     }
                 }
 
-                if(zoneControlerParJoueur1==3){
+                if(zoneControleeParJoueur1==3){
                     defGagnant(1);
-                }else if(zoneConrtolerParJoueur2==3){
+                }else if(zoneControleeParJoueur2==3){
                     defGagnant(2);
                 }else{
-                    //------------------------------------------------------------------Appel le redeploiement des soldats
-                    Intent intentNextPage = new Intent(Combat.this, Combat.class);
+                    //--------------------------------------------Appelle le redeploiement des soldats
+                    Intent intentNextPage = new Intent(Combat.this, RedeploiementArmee.class);
                     intentNextPage.putExtra("SOLDATS_ZONE1", soldatsZone1);
                     intentNextPage.putExtra("SOLDATS_ZONE2", soldatsZone2);
                     intentNextPage.putExtra("SOLDATS_ZONE3", soldatsZone3);
@@ -612,7 +609,7 @@ public class Combat extends AppCompatActivity {
 
     }
 
-    private int sommeSodats(int[] soldatsZone){
+    private int sommeSoldats(int[] soldatsZone){
         int somme=0;
         for(int i=0;i<5;i++){
             somme+=soldatsZone[i];

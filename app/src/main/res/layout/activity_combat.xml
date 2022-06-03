@@ -42,16 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/combat_titre" />
 
-    <ImageView
-        android:id="@+id/arrow_nextPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/arrow_right" />
-
     <LinearLayout
         android:id="@+id/combat_zone1"
         android:layout_width="0dp"

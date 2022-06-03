@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Termine l'activité avec le bouton quitter de la fin de partie
+        if (getIntent().getBooleanExtra("EXIT", false)) {
+            finish();
+        }
+
         final TextView nouvellePartie = (TextView) findViewById(R.id.main_activity_nouvelle_partie);
         nouvellePartie.setOnClickListener(new View.OnClickListener() {
             @Override

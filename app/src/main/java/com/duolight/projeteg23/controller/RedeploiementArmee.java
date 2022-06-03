@@ -30,6 +30,13 @@ public class RedeploiementArmee extends AppCompatActivity {
     private static final String VIEW_TAG4 = "Bravo";
     private static final String VIEW_TAG5 = "Charlie";
 
+    //compte le nombre de soldat par zone
+    private static int [] compteurSoldatsZone1=new int[5];
+    private static int [] compteurSoldatsZone2=new int[5];
+    private static int [] compteurSoldatsZone3=new int[5];
+    private static int [] compteurSoldatsZone4=new int[5];
+    private static int [] compteurSoldatsZone5=new int[5];
+    private static int [] controleZone=new int[6];
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -37,12 +44,32 @@ public class RedeploiementArmee extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_redeploiement_armee);
 
+        Intent intent = getIntent();
+        int []soldatsZone1 = intent.getIntArrayExtra("SOLDATS_ZONE1");
+        int []soldatsZone2 = intent.getIntArrayExtra("SOLDATS_ZONE2");
+        int []soldatsZone3 = intent.getIntArrayExtra("SOLDATS_ZONE3");
+        int []soldatsZone4 = intent.getIntArrayExtra("SOLDATS_ZONE4");
+        int []soldatsZone5 = intent.getIntArrayExtra("SOLDATS_ZONE5");
+        int []controleZone = intent.getIntArrayExtra("CONTROLE_ZONE");
+        compteurSoldatsZone1 = soldatsZone1;
+        compteurSoldatsZone2 = soldatsZone2;
+        compteurSoldatsZone3 = soldatsZone3;
+        compteurSoldatsZone4 = soldatsZone4;
+        compteurSoldatsZone5 = soldatsZone5;
+
         ImageView next = findViewById(R.id.arrow_right);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(RedeploiementArmee.this, FinDePartie.class);
+                Intent intent = new Intent(RedeploiementArmee.this, Combat.class);
+                intent.putExtra("SOLDATS_ZONE1", compteurSoldatsZone1);
+                intent.putExtra("SOLDATS_ZONE2", compteurSoldatsZone2);
+                intent.putExtra("SOLDATS_ZONE3", compteurSoldatsZone3);
+                intent.putExtra("SOLDATS_ZONE4", compteurSoldatsZone4);
+                intent.putExtra("SOLDATS_ZONE5", compteurSoldatsZone5);
+                intent.putExtra("CONTROLE_ZONE", controleZone);
+
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
             }
@@ -414,7 +441,26 @@ public class RedeploiementArmee extends AppCompatActivity {
         });
     }
     private void addSoldat(Integer zone, Integer groupe) {
-
+        switch (zone){
+            case 1:
+                compteurSoldatsZone1[groupe]++;
+                break;
+            case 2:
+                compteurSoldatsZone2[groupe]++;
+                break;
+            case 3:
+                compteurSoldatsZone3[groupe]++;
+                break;
+            case 4:
+                compteurSoldatsZone4[groupe]++;
+                break;
+            case 5:
+                compteurSoldatsZone5[groupe]++;
+                break;
+            default:
+                Toast.makeText(this, "Erreur : le soldat n'a pas été ajouté au compteur", Toast.LENGTH_LONG).show();
+                break;
+        }
     }
 
     private static class MyDragShadowBuilder extends View.DragShadowBuilder {
