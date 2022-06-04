@@ -8,7 +8,7 @@
     tools:context=".controller.RedeploiementArmee">
 
     <LinearLayout
-        android:id="@+id/redeployement"
+        android:id="@+id/redeploiement"
         android:layout_width="match_parent"
         android:layout_height="190dp"
         android:layout_marginTop="12dp"
@@ -30,12 +30,145 @@
             android:background="@drawable/zone_combat"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/zone1Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone1SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_chefdeguerre" />
+
+                    <TextView
+                        android:id="@+id/zone1SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone1SoldatImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_alpha" />
+
+                    <TextView
+                        android:id="@+id/zone1SoldatText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone1SoldatImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/zone1SoldatText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zone1Ligne2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone1SoldatImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_charlie" />
+
+                    <TextView
+                        android:id="@+id/zone1SoldatText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/black" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -49,11 +182,49 @@
             android:background="@drawable/zone_combat"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/zone2Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone2SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/zone2SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="50dp"
                 android:background="@android:color/black" />
         </LinearLayout>
 
@@ -68,11 +239,77 @@
             android:background="@drawable/zone_combat"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/zone3Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone3SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_alpha" />
+
+                    <TextView
+                        android:id="@+id/zone3SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone3SoldatImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/zone3SoldatText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="50dp"
                 android:background="@android:color/black" />
         </LinearLayout>
 
@@ -87,11 +324,49 @@
             android:background="@drawable/zone_combat"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/zone4Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone4SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/zone4SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="50dp"
                 android:background="@android:color/black" />
         </LinearLayout>
 
@@ -105,12 +380,49 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/zone_combat"
             android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/zone5Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/zone5SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_elite" />
+
+                    <TextView
+                        android:id="@+id/zone5SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="50dp"
                 android:background="@android:color/black" />
         </LinearLayout>
     </LinearLayout>
@@ -323,6 +635,8 @@
             android:id="@+id/arrow_right"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="4dp"
             app:srcCompat="@drawable/arrow_right" />
     </LinearLayout>
 

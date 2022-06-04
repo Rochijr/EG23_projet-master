@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
-        android:id="@+id/deployement"
+        android:id="@+id/deploiement"
         android:layout_width="731dp"
         android:layout_height="160dp"
         android:layout_marginTop="24dp"
@@ -63,7 +63,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
-            android:id="@+id/zone1"
+            android:id="@+id/deploiement_zone1"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="4dp"
@@ -71,11 +71,181 @@
             android:layout_marginRight="3dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/zone_combat"
-            android:orientation="vertical"
-            android:padding="10dp"/>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone1Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone1Soldat1"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone1SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_chefdeguerre" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone1SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone1Soldat2"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone1SoldatImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_elite" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone1SoldatText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone1Soldat3"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone1SoldatImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_alpha" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone1SoldatText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone1Ligne2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone1Soldat4"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone1SoldatImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone1SoldatText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone1Soldat5"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone1SoldatImage5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_charlie" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone1SoldatText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/zone2"
+            android:id="@+id/deploiement_zone2"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -83,11 +253,181 @@
             android:layout_marginRight="3dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/zone_combat"
-            android:orientation="vertical"
-            android:padding="10dp"></LinearLayout>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone2Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone2Soldat1"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone2SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_chefdeguerre" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone2SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone2Soldat2"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone2SoldatImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_elite" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone2SoldatText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone2Soldat3"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone2SoldatImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_alpha" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone2SoldatText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone2Ligne2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone2Soldat4"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone2SoldatImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone2SoldatText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone2Soldat5"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone2SoldatImage5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_charlie" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone2SoldatText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/zone3"
+            android:id="@+id/deploiement_zone3"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -95,11 +435,181 @@
             android:layout_marginRight="3dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/zone_combat"
-            android:orientation="vertical"
-            android:padding="10dp"></LinearLayout>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone3Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone3Soldat1"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone3SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_chefdeguerre" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone3SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone3Soldat2"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone3SoldatImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_elite" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone3SoldatText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone3Soldat3"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone3SoldatImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_alpha" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone3SoldatText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone3Ligne2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone3Soldat4"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone3SoldatImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone3SoldatText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone3Soldat5"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone3SoldatImage5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_charlie" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone3SoldatText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/zone4"
+            android:id="@+id/deploiement_zone4"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -107,11 +617,181 @@
             android:layout_marginRight="3dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/zone_combat"
-            android:orientation="vertical"
-            android:padding="10dp"></LinearLayout>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone4Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone4Soldat1"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone4SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_chefdeguerre" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone4SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone4Soldat2"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone4SoldatImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_elite" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone4SoldatText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone4Soldat3"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone4SoldatImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_alpha" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone4SoldatText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone4Ligne2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone4Soldat4"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone4SoldatImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone4SoldatText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone4Soldat5"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone4SoldatImage5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_charlie" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone4SoldatText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/zone5"
+            android:id="@+id/deploiement_zone5"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -119,9 +799,180 @@
             android:layout_marginRight="3dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/zone_combat"
-            android:orientation="vertical"
-            android:padding="10dp"></LinearLayout>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone5Ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone5Soldat1"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone5SoldatImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_chefdeguerre" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone5SoldatText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone5Soldat2"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone5SoldatImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_elite" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone5SoldatText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone5Soldat3"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone5SoldatImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_alpha" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone5SoldatText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deploiement_zone5Ligne2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone5Soldat4"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone5SoldatImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_bravo" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone5SoldatText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deploiement_zone5Soldat5"
+                    android:visibility="invisible"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/deploiement_zone5SoldatImage5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:background="@drawable/logo_charlie" />
+
+                    <TextView
+                        android:id="@+id/deploiement_zone5SoldatText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/army"
         android:layout_width="660dp"

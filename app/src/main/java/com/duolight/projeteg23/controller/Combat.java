@@ -283,11 +283,11 @@ public class Combat extends AppCompatActivity {
             zone1Soldat4Image.setVisibility(View.GONE);
             zone1Soldat4Text.setVisibility(View.GONE);
 
-            dZone1.setColorFilter( Color.parseColor("#F0E93A"), PorterDuff.Mode.SRC_ATOP);
+            dZone1.setColorFilter(Color.parseColor("#F0E93A"), PorterDuff.Mode.SRC_ATOP);
             zone1.setBackground(dZone1);
         }
         if (controleZone[1]==1){
-            dZone1.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
+            dZone1.setColorFilter(Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
             zone1.setBackground(dZone1);
             //On rend les soldats du joueur 2 invisibles
             zone1Soldat0Joueur2Image.setVisibility(View.GONE);
