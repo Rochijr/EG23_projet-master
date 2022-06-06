@@ -169,12 +169,12 @@
                 android:text="Constitution : 10"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_consititution_moins"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_constitution_moins"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/popUp_button_resistance_moins" />
 
             <Button
-                android:id="@+id/popUp_button_consititution_moins"
+                android:id="@+id/popUp_button_constitution_moins"
                 android:layout_width="48dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
@@ -210,7 +210,7 @@
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/popUp_button_initiative_moins"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/popUp_button_consititution_moins" />
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_constitution_moins" />
 
             <Button
                 android:id="@+id/popUp_button_initiative_moins"
@@ -222,7 +222,7 @@
                 android:text="◀"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toStartOf="@+id/popUp_button_initiative_plus"
-                app:layout_constraintTop_toBottomOf="@+id/popUp_button_consititution_moins"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_constitution_moins"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button

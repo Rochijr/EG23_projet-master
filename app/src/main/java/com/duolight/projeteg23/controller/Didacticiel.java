@@ -24,6 +24,7 @@ public class Didacticiel extends AppCompatActivity {
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
                 Intent intent = new Intent(Didacticiel.this, MainActivity.class);
                 // Exécution de l’activité : ouverture de la fenêtre
+                finish();
                 startActivity(intent);
             }
         });

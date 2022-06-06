@@ -28,7 +28,7 @@ public class RepartitionPoints extends AppCompatActivity {
     private int points;
 
     private TextView mPointsRestants;
-    //Création de text View pour les caractéristique des soldats de l'armée
+    // Création de text View pour les caractéristiques des soldats de l'armée
     private TextView mForceChef;
     private TextView mDexteriteChef;
     private TextView mResistanceChef;
@@ -61,11 +61,11 @@ public class RepartitionPoints extends AppCompatActivity {
 
     Armee armeeDeBase = generateArmee(1);
 
-    int[] caraccteristiqueChef;
-    int[] caraccteristiqueElite;
-    int[] caraccteristiqueAlpha;
-    int[] caraccteristiqueBravo;
-    int[] caraccteristiqueCharlie;
+    int[] caracteristiqueChef;
+    int[] caracteristiqueElite;
+    int[] caracteristiqueAlpha;
+    int[] caracteristiqueBravo;
+    int[] caracteristiqueCharlie;
 
     //Creation des TextView de la popUp
     private TextView mPopUp_title;
@@ -138,43 +138,43 @@ public class RepartitionPoints extends AppCompatActivity {
         mConstitutionCharlie = findViewById(R.id.repartition_points_textView_Charlie_constitution);
         mInitiativeCharlie = findViewById(R.id.repartition_points_textView_Charlie_initiative);
 
-        caraccteristiqueChef=armeeDeBase.getCaracteristiqueSoldat(0);
-        caraccteristiqueElite=armeeDeBase.getCaracteristiqueSoldat(1);
-        caraccteristiqueAlpha=armeeDeBase.getCaracteristiqueSoldat(2);
-        caraccteristiqueBravo=armeeDeBase.getCaracteristiqueSoldat(3);
-        caraccteristiqueCharlie=armeeDeBase.getCaracteristiqueSoldat(4);
+        caracteristiqueChef=armeeDeBase.getCaracteristiqueSoldat(0);
+        caracteristiqueElite=armeeDeBase.getCaracteristiqueSoldat(1);
+        caracteristiqueAlpha=armeeDeBase.getCaracteristiqueSoldat(2);
+        caracteristiqueBravo=armeeDeBase.getCaracteristiqueSoldat(3);
+        caracteristiqueCharlie=armeeDeBase.getCaracteristiqueSoldat(4);
 
         mPointsRestants.setText("Points Restants : "+points);
 
-        mForceChef.setText("Force : "+caraccteristiqueChef[1]);
-        mDexteriteChef.setText("Dexterité : "+caraccteristiqueChef[2]);
-        mResistanceChef.setText("Resistannce : "+caraccteristiqueChef[3]);
-        mConstitutionChef.setText("Consititution : "+caraccteristiqueChef[4]);
-        mInitiativeChef.setText("Initiative : "+caraccteristiqueChef[5]);
+        mForceChef.setText("Force : "+caracteristiqueChef[1]);
+        mDexteriteChef.setText("Dextérité : "+caracteristiqueChef[2]);
+        mResistanceChef.setText("Résistance : "+caracteristiqueChef[3]);
+        mConstitutionChef.setText("Constitution : "+caracteristiqueChef[4]);
+        mInitiativeChef.setText("Initiative : "+caracteristiqueChef[5]);
 
-        mForceElite.setText("Force : "+caraccteristiqueElite[1]);
-        mDexteriteElite.setText("Dexterité : "+caraccteristiqueElite[2]);
-        mResistanceElite.setText("Resistannce : "+caraccteristiqueElite[3]);
-        mConstitutionElite.setText("Consititution : "+caraccteristiqueElite[4]);
-        mInitiativeElite.setText("Initiative : "+caraccteristiqueElite[5]);
+        mForceElite.setText("Force : "+caracteristiqueElite[1]);
+        mDexteriteElite.setText("Dextérité : "+caracteristiqueElite[2]);
+        mResistanceElite.setText("Résistance : "+caracteristiqueElite[3]);
+        mConstitutionElite.setText("Constitution : "+caracteristiqueElite[4]);
+        mInitiativeElite.setText("Initiative : "+caracteristiqueElite[5]);
 
-        mForceAlpha.setText("Force : "+caraccteristiqueAlpha[1]);
-        mDexteriteAlpha.setText("Dexterité : "+caraccteristiqueAlpha[2]);
-        mResistanceAlpha.setText("Resistannce : "+caraccteristiqueAlpha[3]);
-        mConstitutionAlpha.setText("Consititution : "+caraccteristiqueAlpha[4]);
-        mInitiativeAlpha.setText("Initiative : "+caraccteristiqueAlpha[5]);
+        mForceAlpha.setText("Force : "+caracteristiqueAlpha[1]);
+        mDexteriteAlpha.setText("Dextérité : "+caracteristiqueAlpha[2]);
+        mResistanceAlpha.setText("Résistance : "+caracteristiqueAlpha[3]);
+        mConstitutionAlpha.setText("Constitution : "+caracteristiqueAlpha[4]);
+        mInitiativeAlpha.setText("Initiative : "+caracteristiqueAlpha[5]);
 
-        mForceBravo.setText("Force : "+caraccteristiqueBravo[1]);
-        mDexteriteBravo.setText("Dexterité : "+caraccteristiqueBravo[2]);
-        mResistanceBravo.setText("Resistannce : "+caraccteristiqueBravo[3]);
-        mConstitutionBravo.setText("Consititution : "+caraccteristiqueBravo[4]);
-        mInitiativeBravo.setText("Initiative : "+caraccteristiqueBravo[5]);
+        mForceBravo.setText("Force : "+caracteristiqueBravo[1]);
+        mDexteriteBravo.setText("Dextérité : "+caracteristiqueBravo[2]);
+        mResistanceBravo.setText("Résistance : "+caracteristiqueBravo[3]);
+        mConstitutionBravo.setText("Constitution : "+caracteristiqueBravo[4]);
+        mInitiativeBravo.setText("Initiative : "+caracteristiqueBravo[5]);
 
-        mForceCharlie.setText("Force : "+caraccteristiqueCharlie[1]);
-        mDexteriteCharlie.setText("Dexterité : "+caraccteristiqueCharlie[2]);
-        mResistanceCharlie.setText("Resistannce : "+caraccteristiqueCharlie[3]);
-        mConstitutionCharlie.setText("Consititution : "+caraccteristiqueCharlie[4]);
-        mInitiativeCharlie.setText("Initiative : "+caraccteristiqueCharlie[5]);
+        mForceCharlie.setText("Force : "+caracteristiqueCharlie[1]);
+        mDexteriteCharlie.setText("Dextérité : "+caracteristiqueCharlie[2]);
+        mResistanceCharlie.setText("Résistance : "+caracteristiqueCharlie[3]);
+        mConstitutionCharlie.setText("Constitution : "+caracteristiqueCharlie[4]);
+        mInitiativeCharlie.setText("Initiative : "+caracteristiqueCharlie[5]);
 
 
         final ImageView mArrowRight= findViewById(R.id.repartition_points_arrow_right);
@@ -248,9 +248,9 @@ public class RepartitionPoints extends AppCompatActivity {
 
     private Soldats myCustomAlertDialog(int typeSoldat){
 
-        //récuper le soldat
+        // récupérer le soldat
         Soldats soldat = armeeDeBase.getSoldat(typeSoldat);
-        //crée la popUp
+        // crée la popUp
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final View popUpView = getLayoutInflater().inflate(R.layout.popup, null);
 
@@ -268,7 +268,7 @@ public class RepartitionPoints extends AppCompatActivity {
         mResistancePlus = (Button) popUpView.findViewById(R.id.popUp_button_resistance_plus);
         mResistanceMoins = (Button) popUpView.findViewById(R.id.popUp_button_resistance_moins);
         mConstitutionPlus = (Button) popUpView.findViewById(R.id.popUp_button_constitution_plus);
-        mConstitutionMoins = (Button) popUpView.findViewById(R.id.popUp_button_consititution_moins);
+        mConstitutionMoins = (Button) popUpView.findViewById(R.id.popUp_button_constitution_moins);
         mInitiativePlus = (Button) popUpView.findViewById(R.id.popUp_button_initiative_plus);
         mInitiativeMoins = (Button) popUpView.findViewById(R.id.popUp_button_initiative_moins);
 
@@ -283,95 +283,110 @@ public class RepartitionPoints extends AppCompatActivity {
         mForcePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurForce++;
-                mPopUp_force.setText("Force : " +(soldat.getForce() + compteurForce));
-                displayforce(typeSoldat,1,(soldat.getForce() + compteurForce));
+                //augmente la force
+                if (points > 0) {
+                    mPopUp_force.setText("Force : " + (soldat.getForce() + 1));
+                    displayforce(typeSoldat, 1, (soldat.getForce() + 1));
+                } else points = 0;
             }
         });
         mForceMoins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurForce--;
-                mPopUp_force.setText("Force : " +(soldat.getForce()+compteurForce));
-                displayforce(typeSoldat,-1,(soldat.getForce() + compteurForce));
+                //diminue la force
+                if (soldat.getForce()>0) {
+                    compteurForce--;
+                    mPopUp_force.setText("Force : " + (soldat.getForce() - 1));
+                    displayforce(typeSoldat, -1, (soldat.getForce() - 1));
+                }
             }
         });
 
         mDexteritePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurDexterite++;
-                mPopUp_dexterite.setText("Dexterite : " +(soldat.getDexterite() + compteurDexterite));
-                displayDexterite(typeSoldat,1,(soldat.getDexterite() + compteurDexterite));
+                //augmente la dextérité
+                if (points > 0) {
+                    mPopUp_dexterite.setText("Dexterite : " + (soldat.getDexterite() + 1));
+                    displayDexterite(typeSoldat, 1, (soldat.getDexterite() + 1));
+                } else points = 0;
             }
         });
         mDexteriteMoins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurDexterite--;
-                mPopUp_dexterite.setText("Dexterite : " +(soldat.getDexterite()+compteurDexterite));
-                displayDexterite(typeSoldat,-1,(soldat.getDexterite() + compteurDexterite));
+                //diminue la dextérité
+                if (soldat.getDexterite()>0) {
+                    mPopUp_dexterite.setText("Dexterite : " +(soldat.getDexterite() - 1));
+                    displayDexterite(typeSoldat,-1,(soldat.getDexterite() - 1));
+                }
             }
         });
 
         mResistancePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurResistance++;
-                mPopUp_resistance.setText("Resistance : " +(soldat.getResistance() + compteurResistance));
-                displayResistance(typeSoldat,1,(soldat.getResistance() + compteurResistance));
+                //augmente la résistance
+                if (points > 0) {
+                    mPopUp_resistance.setText("Resistance : " +(soldat.getResistance() + 1));
+                    displayResistance(typeSoldat,1,(soldat.getResistance() + 1));
+                } else points = 0;
             }
         });
         mResistanceMoins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurResistance--;
-                mPopUp_resistance.setText("Resistance : " +(soldat.getResistance()+compteurResistance));
-                displayResistance(typeSoldat,-1,(soldat.getResistance() + compteurResistance));
+                //diminue la résistance
+                if (soldat.getResistance()>0) {
+                    mPopUp_resistance.setText("Resistance : " + (soldat.getResistance() - 1));
+                    displayResistance(typeSoldat, -1, (soldat.getResistance() - 1));
+                }
             }
         });
 
         mConstitutionPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurConstitution++;
-                mPopUp_constitution.setText("Constitution : " +(soldat.getConstitution() + compteurConstitution));
-                displayConstitution(typeSoldat,1,(soldat.getConstitution() + compteurConstitution));
+                //augmente la constitution
+                if (points > 0) {
+                    mPopUp_constitution.setText("Constitution : " +(soldat.getConstitution() + 1));
+                    displayConstitution(typeSoldat,1,(soldat.getConstitution() + 1));
+                } else points = 0;
             }
         });
         mConstitutionMoins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurConstitution--;
-                mPopUp_constitution.setText("Constitution : " +(soldat.getConstitution()+compteurConstitution));
-                displayConstitution(typeSoldat,-1,(soldat.getConstitution() + compteurConstitution));
+                //diminue la constitution
+                if (soldat.getConstitution()>0) {
+                    mPopUp_constitution.setText("Constitution : " + (soldat.getConstitution() - 1));
+                    displayConstitution(typeSoldat, -1, (soldat.getConstitution() - 1));
+                }
             }
         });
 
         mInitiativePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurInitiative++;
-                mPopUp_initiative.setText("Initiative : " +(soldat.getInitiative() + compteurInitiative));
-                displayInitiative(typeSoldat,1,(soldat.getInitiative() + compteurInitiative));
+                //augmente l'initiative'
+                if (points > 0) {
+                    mPopUp_initiative.setText("Initiative : " + (soldat.getInitiative() + 1));
+                    displayInitiative(typeSoldat, 1, (soldat.getInitiative() + 1));
+                } else points = 0;
             }
         });
         mInitiativeMoins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augemente la force
-                compteurInitiative--;
-                mPopUp_initiative.setText("Initiative : " +(soldat.getInitiative()+compteurInitiative));
-                displayInitiative(typeSoldat,-1,(soldat.getInitiative() + compteurInitiative));
+                //diminue l'initiative'
+                if (soldat.getInitiative()>0) {
+                    //compteurInitiative--;
+                    //mPopUp_initiative.setText("Initiative : " + (soldat.getInitiative() + compteurInitiative));
+                    //displayInitiative(typeSoldat, -1, (soldat.getInitiative() + compteurInitiative));
+                    //compteurInitiative--;
+                    mPopUp_initiative.setText("Initiative : " + (soldat.getInitiative() - 1));
+                    displayInitiative(typeSoldat, -1, (soldat.getInitiative() - 1));
+                }
             }
         });
         builder.setView(popUpView);
@@ -381,25 +396,30 @@ public class RepartitionPoints extends AppCompatActivity {
         return newSoldat;
     }
 
-    public void displayforce(int typeSoldat,int signe, int valeur) {
+    public void displayforce(int typeSoldat, int signe, int valeur) {
         switch (typeSoldat) {
             case 0:
+                caracteristiqueChef[1] = valeur;
                 mForceChef.setText("Force : " + valeur);
                 points-=signe;
                 break;
             case 1:
+                caracteristiqueElite[1] = valeur;
                 mForceElite.setText("Force : " + valeur);
                 points-=(4*signe);
                 break;
             case 2:
+                caracteristiqueAlpha[1] = valeur;
                 mForceAlpha.setText("Force : " + valeur);
                 points-=(5*signe);
                 break;
             case 3:
+                caracteristiqueBravo[1] = valeur;
                 mForceBravo.setText("Force : " + valeur);
                 points-=(5*signe);
                 break;
             case 4:
+                caracteristiqueCharlie[1] = valeur;
                 mForceCharlie.setText("Force : " + valeur);
                 points-=(5*signe);
                 break;
@@ -409,22 +429,27 @@ public class RepartitionPoints extends AppCompatActivity {
     public void displayDexterite(int typeSoldat,int signe, int valeur){
         switch (typeSoldat){
             case 0 :
+                caracteristiqueChef[2] = valeur;
                 mDexteriteChef.setText("Dexterite : "+valeur);
                 points-=signe;
                 break;
             case 1 :
+                caracteristiqueElite[2] = valeur;
                 mDexteriteElite.setText("Dexterite : "+valeur);
                 points-=(4*signe);
                 break;
             case 2 :
+                caracteristiqueAlpha[2] = valeur;
                 mDexteriteAlpha.setText("Dexterite : "+valeur);
                 points-=(5*signe);
                 break;
             case 3 :
+                caracteristiqueBravo[2] = valeur;
                 mDexteriteBravo.setText("Dexterite : "+valeur);
                 points-=(5*signe);
                 break;
             case 4 :
+                caracteristiqueCharlie[2] = valeur;
                 mDexteriteCharlie.setText("Dexterite : "+valeur);
                 points-=(5*signe);
                 break;
@@ -435,22 +460,27 @@ public class RepartitionPoints extends AppCompatActivity {
     public void displayResistance(int typeSoldat,int signe, int valeur){
         switch (typeSoldat){
             case 0 :
+                caracteristiqueChef[3] = valeur;
                 mResistanceChef.setText("Resistance : "+valeur);
                 points-=signe;
                 break;
             case 1 :
+                caracteristiqueElite[3] = valeur;
                 mResistanceElite.setText("Resistance : "+valeur);
                 points-=(4*signe);
                 break;
             case 2 :
+                caracteristiqueAlpha[3] = valeur;
                 mResistanceAlpha.setText("Resistance : "+valeur);
                 points-=(5*signe);
                 break;
             case 3 :
+                caracteristiqueBravo[3] = valeur;
                 mResistanceBravo.setText("Resistance : "+valeur);
                 points-=(5*signe);
                 break;
             case 4 :
+                caracteristiqueCharlie[3] = valeur;
                 mResistanceCharlie.setText("Resistance : "+valeur);
                 points-=(5*signe);
                 break;
@@ -460,48 +490,58 @@ public class RepartitionPoints extends AppCompatActivity {
     public void displayConstitution(int typeSoldat,int signe, int valeur){
         switch (typeSoldat){
             case 0 :
+                caracteristiqueChef[4] = valeur;
                 mConstitutionChef.setText("Constitution : "+valeur);
                 points-=signe;
                 break;
             case 1 :
+                caracteristiqueElite[4] = valeur;
                 mConstitutionElite.setText("Constitution : "+valeur);
                 points-=(4*signe);
                 break;
             case 2 :
+                caracteristiqueAlpha[4] = valeur;
                 mConstitutionAlpha.setText("Constitution : "+valeur);
                 points-=(5*signe);
                 break;
             case 3 :
+                caracteristiqueBravo[4] = valeur;
                 mConstitutionBravo.setText("Constitution : "+valeur);
                 points-=(5*signe);
                 break;
             case 4 :
+                caracteristiqueCharlie[4] = valeur;
                 mConstitutionCharlie.setText("Constitution : "+valeur);
                 points-=(5*signe);
                 break;
         }
         mPointsRestants.setText("Points Restants : "+points);
     }
-    public void displayInitiative(int typeSoldat,int signe, int valeur){
+    public void displayInitiative(int typeSoldat, int signe, int valeur){
         switch (typeSoldat){
             case 0 :
-                mInitiativeChef.setText("Initiative : "+valeur);
+                caracteristiqueChef[5] = valeur;
+                mInitiativeChef.setText("Initiative : "+ valeur);
                 points-=signe;
                 break;
             case 1 :
-                mInitiativeElite.setText("Initiative : "+valeur);
+                caracteristiqueElite[5] = valeur;
+                mInitiativeElite.setText("Initiative : " + valeur);
                 points-=(4*signe);
                 break;
             case 2 :
-                mInitiativeAlpha.setText("Initiative : "+valeur);
+                caracteristiqueAlpha[5] = valeur;
+                mInitiativeAlpha.setText("Initiative : " + valeur);
                 points-=(5*signe);
                 break;
             case 3 :
-                mInitiativeBravo.setText("Initiative : "+valeur);
+                caracteristiqueBravo[5] = valeur;
+                mInitiativeBravo.setText("Initiative : " + valeur);
                 points-=(5*signe);
                 break;
             case 4 :
-                mInitiativeCharlie.setText("Initiative : "+valeur);
+                caracteristiqueCharlie[5] = valeur;
+                mInitiativeCharlie.setText("Initiative : " + valeur);
                 points-=(5*signe);
                 break;
         }
@@ -537,7 +577,6 @@ public class RepartitionPoints extends AppCompatActivity {
                 1,
                 0
         );
-
         Soldats soldatsAlpha1 = new Soldats(
                 "Soldat Alpha ",
                 30,

@@ -84,18 +84,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
             compteurSoldatsZone5[i] = 0;
         }
 
-        // Remettre invisible certaines vues.
-        TextView tv = findViewById(R.id.deploiement_zone1SoldatText1);
-        tv.setVisibility(View.INVISIBLE);
-        tv = findViewById(R.id.deploiement_zone1SoldatText2);
-        tv.setVisibility(View.INVISIBLE);
-        tv = findViewById(R.id.deploiement_zone1SoldatText3);
-        tv.setVisibility(View.INVISIBLE);
-        tv = findViewById(R.id.deploiement_zone1SoldatText4);
-        tv.setVisibility(View.INVISIBLE);
-        tv = findViewById(R.id.deploiement_zone1SoldatText5);
-        tv.setVisibility(View.INVISIBLE);
-
         // initialisation du nombre de tour
         getSharedPreferences(SHARED_PREF_NOMBRE_DE_TOUR, MODE_PRIVATE)
                 .edit()
@@ -216,11 +204,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                     Toast.makeText(this, "Vous avez déplacé un " + dragData, Toast.LENGTH_SHORT).show();
                     v.setBackgroundResource(R.drawable.border_reserve);
                     ImageView imageView = new ImageView(this);
-
-                    LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.WRAP_CONTENT,
-                            LinearLayout.LayoutParams.WRAP_CONTENT
-                    );
 
                     if(dragData.equals(groupe1.getTag())) {
                         imageView.setImageResource(R.drawable.logo_chefdeguerre);
@@ -542,11 +525,15 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                 Toast.makeText(this, "Erreur : le soldat n'a pas été ajouté au compteur", Toast.LENGTH_LONG).show();
                 break;
         }
-        updateSoldats();
+        updateSoldats(zone);
     }
 
-    private void updateSoldats() {
+    private void updateSoldats(int zone) {
         for (int i=0; i<5; i++) {
+            //if mal initialisé
+            //switch (zone) {
+
+            //}
             if (compteurSoldatsZone1[i] != 0) {
                 switch (i+1) {
                     case 1:
@@ -575,141 +562,145 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                         break;
                     case 5:
                         View frameLayout5 = findViewById(R.id.deploiement_zone1Soldat5);
-                        TextView textView5 = findViewById(R.id.deploiement_zone1SoldatText5);
+                        TextView textView5 = (TextView) findViewById(R.id.deploiement_zone1SoldatText5);
                         frameLayout5.setVisibility(View.VISIBLE);
                         accumulerSoldats(1, i, textView5);
                         break;
                 }
-            } else if (compteurSoldatsZone2[i] != 0) {
+            }
+            if (compteurSoldatsZone2[i] != 0) {
                 switch (i+1) {
                     case 1:
                         View frameLayout1 = findViewById(R.id.deploiement_zone2Soldat1);
                         TextView textView1 = findViewById(R.id.deploiement_zone2SoldatText1);
                         frameLayout1.setVisibility(View.VISIBLE);
-                        textView1.setText("1");
+                        accumulerSoldats(2, i, textView1);
                         break;
                     case 2:
                         View frameLayout2 = findViewById(R.id.deploiement_zone2Soldat2);
                         TextView textView2 = findViewById(R.id.deploiement_zone2SoldatText2);
                         frameLayout2.setVisibility(View.VISIBLE);
-                        textView2.setText("1");
+                        accumulerSoldats(2, i, textView2);
                         break;
                     case 3:
                         View frameLayout3 = findViewById(R.id.deploiement_zone2Soldat3);
                         TextView textView3 = findViewById(R.id.deploiement_zone2SoldatText3);
                         frameLayout3.setVisibility(View.VISIBLE);
-                        textView3.setText("1");
+                        accumulerSoldats(2, i, textView3);
                         break;
                     case 4:
                         View frameLayout4 = findViewById(R.id.deploiement_zone2Soldat4);
                         TextView textView4 = findViewById(R.id.deploiement_zone2SoldatText4);
                         frameLayout4.setVisibility(View.VISIBLE);
-                        textView4.setText("1");
+                        accumulerSoldats(2, i, textView4);
                         break;
                     case 5:
                         View frameLayout5 = findViewById(R.id.deploiement_zone2Soldat5);
                         TextView textView5 = findViewById(R.id.deploiement_zone2SoldatText5);
                         frameLayout5.setVisibility(View.VISIBLE);
-                        textView5.setText("1");
+                        accumulerSoldats(2, i, textView5);
                         break;
                 }
-            } else if (compteurSoldatsZone2[i] != 0) {
+            }
+            if (compteurSoldatsZone3[i] != 0) {
                 switch (i+1) {
                     case 1:
                         View frameLayout1 = findViewById(R.id.deploiement_zone3Soldat1);
                         TextView textView1 = findViewById(R.id.deploiement_zone3SoldatText1);
                         frameLayout1.setVisibility(View.VISIBLE);
-                        textView1.setText(+i);
+                        accumulerSoldats(3, i, textView1);
                         break;
                     case 2:
                         View frameLayout2 = findViewById(R.id.deploiement_zone3Soldat2);
                         TextView textView2 = findViewById(R.id.deploiement_zone3SoldatText2);
                         frameLayout2.setVisibility(View.VISIBLE);
-                        textView2.setText(+i);
+                        accumulerSoldats(3, i, textView2);
                         break;
                     case 3:
                         View frameLayout3 = findViewById(R.id.deploiement_zone3Soldat3);
                         TextView textView3 = findViewById(R.id.deploiement_zone3SoldatText3);
                         frameLayout3.setVisibility(View.VISIBLE);
-                        textView3.setText(+i);
+                        accumulerSoldats(3, i, textView3);
                         break;
                     case 4:
                         View frameLayout4 = findViewById(R.id.deploiement_zone3Soldat4);
                         TextView textView4 = findViewById(R.id.deploiement_zone3SoldatText4);
                         frameLayout4.setVisibility(View.VISIBLE);
-                        textView4.setText(+i);
+                        accumulerSoldats(3, i, textView4);
                         break;
                     case 5:
                         View frameLayout5 = findViewById(R.id.deploiement_zone3Soldat5);
                         TextView textView5 = findViewById(R.id.deploiement_zone3SoldatText5);
                         frameLayout5.setVisibility(View.VISIBLE);
-                        textView5.setText(+i);
+                        accumulerSoldats(3, i, textView5);
                         break;
                 }
-            } else if (compteurSoldatsZone2[i] != 0) {
+            }
+            if (compteurSoldatsZone4[i] != 0) {
                 switch (i+1) {
                     case 1:
                         View frameLayout1 = findViewById(R.id.deploiement_zone4Soldat1);
                         TextView textView1 = findViewById(R.id.deploiement_zone4SoldatText1);
                         frameLayout1.setVisibility(View.VISIBLE);
-                        textView1.setText(+i);
+                        accumulerSoldats(4, i, textView1);
                         break;
                     case 2:
                         View frameLayout2 = findViewById(R.id.deploiement_zone4Soldat2);
                         TextView textView2 = findViewById(R.id.deploiement_zone4SoldatText2);
                         frameLayout2.setVisibility(View.VISIBLE);
-                        textView2.setText(+i);
+                        accumulerSoldats(4, i, textView2);
                         break;
                     case 3:
                         View frameLayout3 = findViewById(R.id.deploiement_zone4Soldat3);
                         TextView textView3 = findViewById(R.id.deploiement_zone4SoldatText3);
                         frameLayout3.setVisibility(View.VISIBLE);
-                        textView3.setText(+i);
+                        accumulerSoldats(4, i, textView3);
                         break;
                     case 4:
                         View frameLayout4 = findViewById(R.id.deploiement_zone4Soldat4);
                         TextView textView4 = findViewById(R.id.deploiement_zone4SoldatText4);
                         frameLayout4.setVisibility(View.VISIBLE);
-                        textView4.setText(+i);
+                        accumulerSoldats(4, i, textView4);
                         break;
                     case 5:
                         View frameLayout5 = findViewById(R.id.deploiement_zone4Soldat5);
                         TextView textView5 = findViewById(R.id.deploiement_zone4SoldatText5);
                         frameLayout5.setVisibility(View.VISIBLE);
-                        textView5.setText(+i);
+                        accumulerSoldats(4, i, textView5);
                         break;
                 }
-            } else if (compteurSoldatsZone2[i] != 0) {
+            }
+            if (compteurSoldatsZone5[i] != 0) {
                 switch (i+1) {
                     case 1:
                         View frameLayout1 = findViewById(R.id.deploiement_zone5Soldat1);
                         TextView textView1 = findViewById(R.id.deploiement_zone5SoldatText1);
                         frameLayout1.setVisibility(View.VISIBLE);
-                        textView1.setText(+i);
+                        accumulerSoldats(5, i, textView1);
                         break;
                     case 2:
                         View frameLayout2 = findViewById(R.id.deploiement_zone5Soldat2);
                         TextView textView2 = findViewById(R.id.deploiement_zone5SoldatText2);
                         frameLayout2.setVisibility(View.VISIBLE);
-                        textView2.setText(+i);
+                        accumulerSoldats(5, i, textView2);
                         break;
                     case 3:
                         View frameLayout3 = findViewById(R.id.deploiement_zone5Soldat3);
                         TextView textView3 = findViewById(R.id.deploiement_zone5SoldatText3);
                         frameLayout3.setVisibility(View.VISIBLE);
-                        textView3.setText(+i);
+                        accumulerSoldats(5, i, textView3);
                         break;
                     case 4:
                         View frameLayout4 = findViewById(R.id.deploiement_zone5Soldat4);
                         TextView textView4 = findViewById(R.id.deploiement_zone5SoldatText4);
                         frameLayout4.setVisibility(View.VISIBLE);
-                        textView4.setText(+i);
+                        accumulerSoldats(5, i, textView4);
                         break;
                     case 5:
                         View frameLayout5 = findViewById(R.id.deploiement_zone5Soldat5);
                         TextView textView5 = findViewById(R.id.deploiement_zone5SoldatText5);
                         frameLayout5.setVisibility(View.VISIBLE);
-                        textView5.setText(+i);
+                        accumulerSoldats(5, i, textView5);
                         break;
                 }
             }
