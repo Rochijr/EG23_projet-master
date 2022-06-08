@@ -7,12 +7,14 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.PopupWindow;
 
 import com.duolight.projeteg23.R;
 import com.duolight.projeteg23.model.Armee;
@@ -286,7 +288,6 @@ public class RepartitionPoints extends AppCompatActivity {
                 mPopUp_image.setImageResource(R.drawable.logo_charlie);
                 break;
         }
-
 
         // on clic
         mForcePlus.setOnClickListener(new View.OnClickListener() {

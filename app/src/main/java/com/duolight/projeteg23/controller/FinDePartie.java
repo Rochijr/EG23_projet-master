@@ -49,16 +49,6 @@ public class FinDePartie extends AppCompatActivity {
         quitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | IntentCompat.FLAG_ACTIVITY_CLEAR_TASK);
-                //Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK
-                //startActivity(intent);
-
-                //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                //intent.putExtra("EXIT", true);
-                //startActivity(intent);
-
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent.putExtra("EXIT", true);

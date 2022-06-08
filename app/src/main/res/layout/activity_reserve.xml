@@ -7,15 +7,6 @@
     android:background="#4C572D"
     tools:context=".controller.Reserve">
 
-    <ImageView
-        android:id="@+id/arrow_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/reserve"
-        app:srcCompat="@drawable/arrow_right" />
-
     <TextView
         android:id="@+id/titre1"
         android:layout_width="wrap_content"
@@ -33,7 +24,7 @@
         android:id="@+id/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:text="Réserve"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -238,7 +229,7 @@
     <LinearLayout
         android:id="@+id/reserve"
         android:layout_width="match_parent"
-        android:layout_height="116dp"
+        android:layout_height="90dp"
         android:background="@drawable/border_reserve"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -247,12 +238,15 @@
 
         <LinearLayout
             android:id="@+id/reserve1_layout"
-            android:layout_width="127.8dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="12dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/reserve1_title"
@@ -262,13 +256,13 @@
                 android:text="Libre"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="15sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageViewReserve1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
@@ -277,12 +271,12 @@
 
         <LinearLayout
             android:id="@+id/reserve2_layout"
-            android:layout_width="127.8dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/reserve2_title"
@@ -292,13 +286,13 @@
                 android:text="Libre"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="15sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageViewReserve2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
@@ -307,12 +301,12 @@
 
         <LinearLayout
             android:id="@+id/reserve3_layout"
-            android:layout_width="127.8dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/reserve3_title"
@@ -322,13 +316,13 @@
                 android:text="Libre"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="15sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageViewReserve3"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
@@ -337,12 +331,12 @@
 
         <LinearLayout
             android:id="@+id/reserve4_layout"
-            android:layout_width="127.8dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/reserve4_title"
@@ -352,13 +346,13 @@
                 android:text="Libre"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="15sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageViewReserve4"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
@@ -367,12 +361,12 @@
 
         <LinearLayout
             android:id="@+id/reserve5_layout"
-            android:layout_width="127.8dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/reserve5_title"
@@ -382,19 +376,26 @@
                 android:text="Libre"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="15sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageViewReserve5"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
                 android:src="@drawable/rouage_blanc" />
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            app:srcCompat="@drawable/arrow_right" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

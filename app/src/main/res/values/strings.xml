@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProjetEG23</string>
     <string name="didacticiel_text">
-        PointsDeVie : Points restant d’un soldat. Lorsque la valeur atteint 0, le combattant est vaincu.\n\n
+        PointsDeVie : Vie restante d’un soldat. Lorsque la valeur atteint 0, le combattant est vaincu.\n\n
         Force : Augmente les dégâts du combattant de 10% par point affecté. Exemple : si un combattant à 2 points, il fera 20% de dégâts en plus.\n\n
         Dextérité : Augmente les chances de toucher son ennemi lors d’une attaque, ou d’esquiver lorsqu’on est attaqué. 1 point correspond à 3% de chance supplémentaire d’atteindre sa cible ou d’esquiver une attaque.\n\n
         Résistance : Diminue les dégâts reçus par le combattant de 5% par point affecté. Exemple : si un combattant a 2 points, 10% des dégâts reçu seront absorbés.\n\n
@@ -9,7 +9,6 @@
         Initiative : Lors d’un affrontement, le combattant avec le plus d’initiative porte le premier coup, puis c’est le deuxième combattant avec le plus d’initiative etc…\n\n
         IntelligenceArtificielle : Façon de jouer des combattants. Les choix : Défensif, Offensif, Aléatoire.\n\n
         Type de soldats : Il existe 5 types de soldats ayant des statistiques initiales différents (voir page 2).</string>
-    <string name="force">Force</string>
     <string name="didacticiel_regle_jeu">
         La bataille des programmes est un jeu 1 contre 1 dans lequel vous devrez conquérir 3 des 5 territoires existants.\n\n
         Pour ce faire vous pourrez distribuer des points de compétences aux soldats de votre armée. Cette dernière se compose d\'un Chef de guerre, de 4 Soldats d\'élites, 5 membres Alpha, 5 membres Bravo et 5 membres Charlie.\n\n
