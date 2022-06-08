@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetEG23">
         <activity
+            android:name=".controller.DidacticielGeneral"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".controller.FinDePartie"
-            android:screenOrientation="landscape"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".controller.Combat"
             android:exported="false"

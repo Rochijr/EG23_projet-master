@@ -21,7 +21,7 @@ public class Didacticiel_2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_didacticiel2);
 
-        final Button button2 = (Button) findViewById(R.id.button2);
+        final Button button2 = (Button) findViewById(R.id.button);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
@@ -29,11 +29,11 @@ public class Didacticiel_2 extends AppCompatActivity {
             }
         });
 
-        final Button button = (Button) findViewById(R.id.button);
+        final Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                pageSuivanteDidacticiel();
+                pagePrecedenteDidacticiel();
             }
         });
         final TextView croix = (TextView) findViewById(R.id.didacticiel_2_croix2);
@@ -44,12 +44,17 @@ public class Didacticiel_2 extends AppCompatActivity {
                 // Exécution de l’activité : ouverture de la fenêtre
                 finish();
                 startActivity(intent);
-
             }
         });
     }
 
-    public void pageSuivanteDidacticiel(){
+    public void pageSuivanteDidacticiel() {
+        // Création d’une activité associée à l’exécution de MaGestionListe.class
+        Intent intent = new Intent(Didacticiel_2.this, DidacticielGeneral.class);
+        // Exécution de l’activité : ouverture de la fenêtre
+        startActivity(intent);
+    }
+    public void pagePrecedenteDidacticiel() {
         // Création d’une activité associée à l’exécution de MaGestionListe.class
         Intent intent = new Intent(Didacticiel_2.this, Didacticiel.class);
         // Exécution de l’activité : ouverture de la fenêtre

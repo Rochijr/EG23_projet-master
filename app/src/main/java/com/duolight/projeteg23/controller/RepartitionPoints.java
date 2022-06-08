@@ -75,6 +75,7 @@ public class RepartitionPoints extends AppCompatActivity {
     private TextView mPopUp_constitution;
     private TextView mPopUp_initiative;
     private TextView mPopUp_offensive;
+    private ImageView mPopUp_image;
 
     private Button mForceMoins;
     private Button mForcePlus;
@@ -86,12 +87,6 @@ public class RepartitionPoints extends AppCompatActivity {
     private Button mConstitutionPlus;
     private Button mInitiativeMoins;
     private Button mInitiativePlus;
-
-    private static int compteurForce=0;
-    private static int compteurDexterite=0;
-    private static int compteurResistance=0;
-    private static int compteurConstitution=0;
-    private static int compteurInitiative=0;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -181,7 +176,7 @@ public class RepartitionPoints extends AppCompatActivity {
         mArrowRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //----------------------------------------ICI changement de Page------------------------------------//
+                //----------------------------------------Changement de Page------------------------------------//
                 Intent intent = new Intent(RepartitionPoints.this, Reserve.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
@@ -194,8 +189,6 @@ public class RepartitionPoints extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 //Appel une pop-up
-                compteurForce=0;
-                compteurDexterite=0;
                 Soldats newSoldats = myCustomAlertDialog(0);
             }
         });
@@ -206,7 +199,6 @@ public class RepartitionPoints extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 //Appel une pop-up
-                initialisationCompteur();
                 Soldats newSoldats = myCustomAlertDialog(1);
             }
         });
@@ -217,7 +209,6 @@ public class RepartitionPoints extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 //Appel une pop-up
-                initialisationCompteur();
                 Soldats newSoldats = myCustomAlertDialog(2);
             }
         });
@@ -228,7 +219,6 @@ public class RepartitionPoints extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 //Appel une pop-up
-                initialisationCompteur();
                 Soldats newSoldats = myCustomAlertDialog(3);
             }
         });
@@ -239,7 +229,6 @@ public class RepartitionPoints extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 //Appel une pop-up
-                initialisationCompteur();
                 Soldats newSoldats = myCustomAlertDialog(4);
             }
         });
@@ -260,6 +249,7 @@ public class RepartitionPoints extends AppCompatActivity {
         mPopUp_resistance = (TextView) popUpView.findViewById(R.id.popUp_resistance);
         mPopUp_constitution = (TextView) popUpView.findViewById(R.id.popUp_constitution);
         mPopUp_initiative = (TextView) popUpView.findViewById(R.id.popUp_initiative);
+        mPopUp_image = (ImageView) popUpView.findViewById(R.id.popUp_imageView);
 
         mForcePlus = (Button) popUpView.findViewById(R.id.popUp_button_force_plus);
         mForceMoins = (Button) popUpView.findViewById(R.id.popUp_button_force_moins);
@@ -279,6 +269,25 @@ public class RepartitionPoints extends AppCompatActivity {
         mPopUp_constitution.setText("Constitution : " +soldat.getConstitution());
         mPopUp_initiative.setText("Initiative : " +soldat.getInitiative());
 
+        switch (typeSoldat) {
+            case 0:
+                mPopUp_image.setImageResource(R.drawable.logo_chefdeguerre);
+                break;
+            case 1:
+                mPopUp_image.setImageResource(R.drawable.logo_elite);
+                break;
+            case 2:
+                mPopUp_image.setImageResource(R.drawable.logo_alpha);
+                break;
+            case 3:
+                mPopUp_image.setImageResource(R.drawable.logo_bravo);
+                break;
+            case 4:
+                mPopUp_image.setImageResource(R.drawable.logo_charlie);
+                break;
+        }
+
+
         // on clic
         mForcePlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -295,7 +304,6 @@ public class RepartitionPoints extends AppCompatActivity {
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 //diminue la force
                 if (soldat.getForce()>0) {
-                    compteurForce--;
                     mPopUp_force.setText("Force : " + (soldat.getForce() - 1));
                     displayforce(typeSoldat, -1, (soldat.getForce() - 1));
                 }
@@ -368,7 +376,7 @@ public class RepartitionPoints extends AppCompatActivity {
         mInitiativePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //augmente l'initiative'
+                //augmente l'initiative
                 if (points > 0) {
                     mPopUp_initiative.setText("Initiative : " + (soldat.getInitiative() + 1));
                     displayInitiative(typeSoldat, 1, (soldat.getInitiative() + 1));
@@ -380,10 +388,6 @@ public class RepartitionPoints extends AppCompatActivity {
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 //diminue l'initiative'
                 if (soldat.getInitiative()>0) {
-                    //compteurInitiative--;
-                    //mPopUp_initiative.setText("Initiative : " + (soldat.getInitiative() + compteurInitiative));
-                    //displayInitiative(typeSoldat, -1, (soldat.getInitiative() + compteurInitiative));
-                    //compteurInitiative--;
                     mPopUp_initiative.setText("Initiative : " + (soldat.getInitiative() - 1));
                     displayInitiative(typeSoldat, -1, (soldat.getInitiative() - 1));
                 }
@@ -392,7 +396,7 @@ public class RepartitionPoints extends AppCompatActivity {
         builder.setView(popUpView);
         builder.create();
         builder.show();
-        Soldats newSoldat = new Soldats(soldat.nom(),30,compteurForce,2,2,2,2,2);
+        Soldats newSoldat = new Soldats(soldat.nom(),30,2,2,2,2,2,2);
         return newSoldat;
     }
 
@@ -548,16 +552,9 @@ public class RepartitionPoints extends AppCompatActivity {
         mPointsRestants.setText("Points Restants : "+points);
     }
 
-    public void initialisationCompteur(){
-        compteurForce=0;
-        compteurDexterite=0;
-        compteurResistance=0;
-        compteurConstitution=0;
-        compteurInitiative=0;
-    }
     public Armee generateArmee(int joueur){
         Soldats chefDeGuerre = new Soldats(
-                "chef de Guerre ",
+                "Chef de Guerre ",
                 30,
                 2,
                 2,

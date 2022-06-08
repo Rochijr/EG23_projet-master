@@ -22,16 +22,18 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:padding="10dp"
+        android:scrollbarSize="6dp"
+        android:scrollbars="vertical"
         android:text="@string/didacticiel_text"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titre2" />
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/titre2"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/didacticiel_croix"

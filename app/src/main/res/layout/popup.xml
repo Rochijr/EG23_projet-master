@@ -30,7 +30,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/popUp_imageView"
             android:layout_width="146dp"
             android:layout_height="59dp"
             android:layout_gravity="center|top"

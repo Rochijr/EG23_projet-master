@@ -11,10 +11,9 @@
         android:id="@+id/arrow_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="116dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/reserve"
         app:srcCompat="@drawable/arrow_right" />
 
     <TextView
@@ -39,7 +38,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/combat_zone2"
+        app:layout_constraintBottom_toTopOf="@+id/reserve"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent" />
@@ -69,8 +68,8 @@
     <!-- Réserve -->
 
     <LinearLayout
-        android:layout_width="731dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -237,7 +236,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/combat_zone2"
+        android:id="@+id/reserve"
         android:layout_width="match_parent"
         android:layout_height="116dp"
         android:background="@drawable/border_reserve"
